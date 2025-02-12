@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteo - Comprar Chances</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: white;
+    }
+    header {
+      background-color: #111111;
+      color: #FFD700;
+      padding: 20px 0;
+    }
+    header img {
+      width: 300px;
+      max-width: 100%;
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+    main {
+      margin: 20px;
+    }
+    .package {
+      background: #1A1A1A;
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(255, 215, 0, 0.5);
+      border: 1px solid #FFD700;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #FFD700;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #C9A400;
+    }
+    footer {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #111111;
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏆 Sorteo: Gana un iPhone 11 Pro 256GB</h1>
+    <img src="Apple_iPhone-11-Pro_Matte-Glass-Back_091019_big.jpg.large.jpg" alt="iPhone 11 Pro">
+    <p>📢 Comprá chances para participar y ganar increíbles premios.</p>
+  </header>
+
+  <main>
+    <div class="package">
+      <h2>Paquete 1</h2>
+      <p>1 chance por $400</p>
+      <button onclick="comprar('https://mpago.la/1JC7NiJ')">Comprar</button>
+    </div>
+
+    <div class="package">
+      <h2>Paquete 2</h2>
+      <p>5 chances por $1800</p>
+      <button onclick="comprar('https://mpago.la/16qg2zk')">Comprar</button>
+    </div>
+
+    <div class="package">
+      <h2>Paquete 3</h2>
+      <p><strong>Comprando el paquete 3 te podés ganar un JBL Flip 6 nuevo</strong></p>
+      <p>10 chances por $3600</p>
+      <button onclick="comprar('https://mpago.la/1RFL3ZY')">Comprar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Sorteos Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function comprar(link) {
+      window.location.href = link; // Redirige al enlace de Mercado Pago
+    }
+  </script>
+</body>
+</html>
